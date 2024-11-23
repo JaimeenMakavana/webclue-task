@@ -1,7 +1,13 @@
 import Image from "next/image";
 import React from "react";
 
-const ServiceCard = ({ service }: { service: any }) => {
+interface ServiceType {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+const ServiceCard = ({ service }: { service: ServiceType }) => {
   return (
     <>
       <div className="gradient-card-mask w-[300px] space-y-3 text-[#CAD1E9] p-3">

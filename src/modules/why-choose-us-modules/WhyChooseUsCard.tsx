@@ -1,7 +1,13 @@
 import Image from "next/image";
 import React from "react";
 
-const WhyChooseUsCard = ({ choose }: { choose: any }) => {
+interface ChooseType {
+  title: string;
+  list: string[];
+  img: string;
+}
+
+const WhyChooseUsCard = ({ choose }: { choose: ChooseType }) => {
   return (
     <div className="grid lg:grid-cols-2 gap-2 border border-[#1f1e1e] rounded-lg p-3 md:p-5 lg:p-6 max-w-4xl">
       <div className="text-[#CAD1E9]">

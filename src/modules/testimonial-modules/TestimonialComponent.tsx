@@ -1,7 +1,15 @@
 import Image from "next/image";
 import React from "react";
 import Avatar from '@/static-files/avatar.svg'
-const TestimonialComponent = ({ review }: { review: any }) => {
+
+interface ReviewType {
+  name: string;
+  role: string;
+  timeAgo: string;
+  review: string;
+}
+
+const TestimonialComponent = ({ review }: { review: ReviewType }) => {
   return (<>
     <div>
       <div className="flex justify-start items-center gap-2">
