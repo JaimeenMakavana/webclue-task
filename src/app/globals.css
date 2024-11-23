@@ -11,7 +11,7 @@ body {
 @layer base {
   :root {
     --background: #000;
-    --border:#1f1e1e;
+    --border: #1f1e1e;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
@@ -37,6 +37,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -65,58 +66,61 @@ body {
   }
 }
 
-.sora{
+.sora {
   font-family: "Sora", sans-serif;
 
 }
+
 .raleway {
   font-family: "Raleway", sans-serif;
 }
 
- .gradient-border-mask {
-      display: block;
-      position: relative;
-      color: #CAD1E9;
-      padding: 8px 12px;
-      /* min-width: 100px; */
-    }
-    .gradient-border-mask::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 12px;
-      border: 1.5px solid transparent;
-      background: linear-gradient(-120deg,#F33CC0, #4349FF) border-box;
-      -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-      mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: destination-out;
-      mask-composite: exclude;
-    }
+.gradient-border-mask {
+  display: block;
+  position: relative;
+  color: #CAD1E9;
+  padding: 8px 12px;
+  /* min-width: 100px; */
+}
+
+.gradient-border-mask::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  border: 1.5px solid transparent;
+  background: linear-gradient(-120deg, #F33CC0, #4349FF) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
 
 
-    .gradient-heading-mask {
-      display: block;
-      position: relative;
-      color: #CAD1E9;
-      padding: 2px 12px;
-      font-size: 14px;
-    }
-    .gradient-heading-mask::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      
-      border-radius: 12px;
-      border: 1.5px solid transparent;
-      background: linear-gradient(-120deg,#F33CC0, #4349FF) border-box;
-      -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-      mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: destination-out;
-      mask-composite: exclude;
-    }
+.gradient-heading-mask {
+  display: block;
+  position: relative;
+  color: #CAD1E9;
+  padding: 2px 12px;
+  font-size: 14px;
+}
+
+.gradient-heading-mask::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  border-radius: 12px;
+  border: 1.5px solid transparent;
+  background: linear-gradient(-120deg, #F33CC0, #4349FF) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
 
 
-    .heading {
+.heading {
   font-weight: 600;
   line-height: 55px;
   background: -webkit-linear-gradient(#F33CC0, #4349FF);
@@ -124,21 +128,30 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
- .gradient-card-mask {
-      display: block;
-      position: relative;
-      color: #CAD1E9;
-      padding: 8px 12px;
-    }
-    .gradient-card-mask::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 12px;
-      border: 1.8px solid transparent;
-      background: linear-gradient(-120deg,#F33CC0, #4349FF) border-box;
-      -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-      mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: destination-out;
-      mask-composite: exclude;
-    }
+.gradient-card-mask {
+  display: block;
+  position: relative;
+  color: #CAD1E9;
+  padding: 8px 12px;
+}
+
+.gradient-card-mask::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  border: 1.8px solid transparent;
+  background: linear-gradient(-120deg, #F33CC0, #4349FF) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+
+.glassBlack {
+  background: rgba(40, 39, 39, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+}
