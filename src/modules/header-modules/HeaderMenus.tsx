@@ -10,7 +10,7 @@ import {
 
 const HeaderMenus = () => {
   return (
-    <div className="flex justify-between items-center border-[2px] border-[#1f1e1e] rounded-lg p-2 mx-auto w-full  ">
+    <div className="flex justify-between items-center border-[2px] border-[#1f1e1e] rounded-lg p-2 mx-auto w-full  sticky top-5 bg-black z-10">
       <Logo />
       <ul className="hidden lg:flex justify-center items-center gap-4 text-[#CAD1E9]">
         <li>Services</li>

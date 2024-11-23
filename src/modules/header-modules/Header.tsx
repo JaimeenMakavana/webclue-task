@@ -4,7 +4,7 @@ import HeaderContent from "./HeaderContent";
 
 const Header = () => {
   return (
-    <div className="w-full p-3 md:p-5">
+    <div className="w-full p-3 md:p-5 ">
       <HeaderMenus />
       <HeaderContent />
     </div>

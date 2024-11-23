@@ -19,10 +19,10 @@ const HeaderContent = () => {
         <button className="gradient-border-mask !bg-gradient-to-r from-[#F33CC0] to-[#4349FF] rounded-xl">Use it Now</button>
       </div>
 
-      <div className="size-[200px] md:size-[300px] relative my-32">
+      <div className="size-[300px] lg:size-[300px] relative my-10 lg:my-32">
         <Image src={ProductityImg} alt="" width={500} height={500} className=" object-cover " />
         {INFO_DATA.map((info) => (
-          <div key={info.id} className={`${info.className} w-fit absolute border border-[#1f1e1e] rounded-md p-2 md:min-w-[200px]`}>
+          <div key={info.id} className={`hidden lg:block ${info.className} w-fit absolute border border-[#1f1e1e] rounded-md p-2 md:min-w-[200px]`}>
             <div className="flex gap-2 ">
               <div className="size-[33px]">
                 <Image src={info.icon} alt="" width={100} height={30} className=" object-cover " />
@@ -35,6 +35,19 @@ const HeaderContent = () => {
           </div>
         ))}
       </div>
+      {INFO_DATA.map((info) => (
+        <div key={info.id} className={` lg:hidden ${info.className} w-fit  border border-[#1f1e1e] rounded-md p-2 mb-3 min-w-[300px]`}>
+          <div className="flex gap-2 ">
+            <div className="size-[33px]">
+              <Image src={info.icon} alt="" width={100} height={30} className=" object-cover " />
+            </div>
+            <div className="text-[12px] *:whitespace-nowrap text-[#CAD1E9]">
+              <h4>{info.name}</h4>
+              <p>{info.value}</p>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
