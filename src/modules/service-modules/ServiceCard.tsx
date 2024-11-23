@@ -10,7 +10,7 @@ interface ServiceType {
 const ServiceCard = ({ service }: { service: ServiceType }) => {
   return (
     <>
-      <div className="gradient-card-mask  max-[375px]:!w-full sm:w-[300px] space-y-3 text-[#CAD1E9] p-3">
+      <div className="gradient-card-mask  max-[375px]:!w-full sm:w-full lg:w-[320px] text-[#CAD1E9] p-5">
         <div className="size-[40px]">
           <Image src={service.icon} alt="" width={100} height={30} />
         </div>
