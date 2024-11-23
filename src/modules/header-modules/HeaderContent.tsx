@@ -39,7 +39,7 @@ const INFO_DATA = [
 
 const HeaderContent = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center py-10">
+    <div className="w-full flex flex-col justify-center items-center pt-16 pb-10">
       <h1 className="gradient-heading-mask mb-5">Secure your data</h1>
       <h2 className="heading text-[40px] md:text-[60px]  text-center">Identity-hub is a better way to achieve privacy</h2>
       <p className="text-[1.2rem] text-[#CAD1E9] text-center my-3">
@@ -48,7 +48,7 @@ const HeaderContent = () => {
       </p>
       <div className="flex justify-center items-center gap-5">
         <button className="gradient-border-mask">Start free trial</button>
-        <button className="gradient-border-mask">Use it Now</button>
+        <button className="gradient-border-mask !bg-gradient-to-r from-[#F33CC0] to-[#4349FF] rounded-xl">Use it Now</button>
       </div>
 
       <div className="size-[200px] md:size-[300px] relative my-32">
