@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <main className="text-white md:max-w-6xl mx-auto">
       <Header />
-      <Service />
+      {/* <Service />
       <WhyChooseUs />
       <Testimonial />
-      <Footer />
+      <Footer /> */}
     </main>
   );
 }

@@ -9,6 +9,7 @@ body {
 @layer base {
   :root {
     --background: #000;
+    --border:#1f1e1e;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
@@ -69,4 +70,58 @@ body {
   body {
     @apply bg-[--background] text-foreground;
   }
+}
+
+
+ .gradient-border-mask {
+      display: block;
+      position: relative;
+      color: #CAD1E9;
+      padding: 8px 12px;
+      /* min-width: 100px; */
+      height: 40px;
+    }
+    .gradient-border-mask::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      
+      border-radius: 12px;
+      border: 1.5px solid transparent;
+      background: linear-gradient(-120deg,#F33CC0, #4349FF) border-box;
+      -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+    }
+
+
+    .gradient-heading-mask {
+      display: block;
+      position: relative;
+      color: #CAD1E9;
+      padding: 2px 12px;
+      font-size: 14px;
+    }
+    .gradient-heading-mask::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      
+      border-radius: 12px;
+      border: 1.5px solid transparent;
+      background: linear-gradient(-120deg,#F33CC0, #4349FF) border-box;
+      -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+    }
+
+
+    .heading {
+  font-weight: 600;
+  line-height: 45px;
+  background: -webkit-linear-gradient(#F33CC0, #4349FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
