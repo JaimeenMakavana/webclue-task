@@ -5,13 +5,14 @@ import Testimonial from "@/modules/testimonial-modules/Testimonial";
 import WhyChooseUs from "@/modules/why-choose-us-modules/WhyChooseUs";
 
 export default function Home() {
-  return (
+  return (<>
     <main className="text-white md:max-w-6xl mx-auto ">
       <Header />
       <Service />
       <WhyChooseUs />
       <Testimonial />
-      <Footer />
     </main>
+    <Footer />
+  </>
   );
 }
