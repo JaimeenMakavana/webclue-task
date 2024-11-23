@@ -1,7 +1,7 @@
 import React from "react";
 
 const GlowingButton = () => {
-  return <div>GlowingButton</div>;
+  return <button className="box border-gradient p-2">I have</button>;
 };
 
 export default GlowingButton;
