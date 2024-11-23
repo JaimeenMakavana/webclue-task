@@ -159,3 +159,8 @@ body {
 .gradientBg{
   background-image: radial-gradient(circle, #f33cc0, #dc36d0, #bc38e0, #903ff0, #4349ff);
 }
+/* .landing{
+  background: url('/img/landing-bg.svg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+} */

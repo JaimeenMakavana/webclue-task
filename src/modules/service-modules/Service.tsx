@@ -1,31 +1,6 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
-import Service1 from '@/static-files/service1.svg';
-import Service2 from '@/static-files/service2.svg';
-import Service3 from '@/static-files/service3.svg';
-const SERVICES_DATA = [
-  {
-    id: 1,
-    icon: Service1,
-    title: "Personal Information Removal",
-    description:
-      "Lets users quickly find answers to their questions without having to search through multiple sources.",
-  },
-  {
-    id: 2,
-    icon: Service2,
-    title: "Cloaking Alias Profiles",
-    description:
-      "Lets users quickly find answers to their questions without having to search through multiple sources.",
-  },
-  {
-    id: 3,
-    icon: Service3,
-    title: "Virtual identities Security",
-    description:
-      "Lets users quickly find answers to their questions without having to search through multiple sources.",
-  },
-];
+import { SERVICES_DATA } from "@/lib/StaticData";
 
 const Service = () => {
   return (

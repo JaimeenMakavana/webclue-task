@@ -6,7 +6,7 @@ import WhyChooseUs from "@/modules/why-choose-us-modules/WhyChooseUs";
 
 export default function Home() {
   return (
-    <main className="text-white md:max-w-6xl mx-auto">
+    <main className="text-white md:max-w-6xl mx-auto ">
       <Header />
       <Service />
       <WhyChooseUs />

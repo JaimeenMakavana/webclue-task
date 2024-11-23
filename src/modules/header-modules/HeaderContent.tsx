@@ -1,43 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import ProductityImg from "@/static-files/productivity.svg";
-import Icon1 from '@/static-files/header(1).svg';
-import Icon2 from '@/static-files/header(2).svg';
-import Icon3 from '@/static-files/header(3).svg';
-import Icon4 from '@/static-files/header(4).svg';
 import UnderlineImg from '@/static-files/underline.svg';
+import { INFO_DATA } from "@/lib/StaticData";
 
-const INFO_DATA = [
-  {
-    id: 1,
-    name: "One-time passcode",
-    value: "kas4536-26",
-    icon: Icon1,
-    className: "-right-[70px] md:-right-[100px] -top-[80]"
-  },
-  {
-    id: 2,
-    name: "Phone Number",
-    value: "+91 1234567890",
-    icon: Icon2,
-    className: "-left-[70px] md:-left-[100px] -top-[80]"
-  },
-  {
-    id: 3,
-    name: "Credit Card",
-    value: "1234-5647-2947-9747",
-    icon: Icon3,
-    className: "-left-[70px] md:-left-[100px] -bottom-[80]"
-
-  },
-  {
-    id: 4,
-    name: "Email Address",
-    value: "abc@gmail.com",
-    icon: Icon4,
-    className: " -right-[70px] md:-right-[100px] -bottom-[80]"
-  },
-];
 
 const HeaderContent = () => {
   return (
