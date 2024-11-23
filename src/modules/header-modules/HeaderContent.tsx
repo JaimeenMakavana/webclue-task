@@ -1,35 +1,39 @@
 import Image from "next/image";
 import React from "react";
 import ProductityImg from "@/static-files/productivity.svg";
+import Icon1 from '@/static-files/header(1).svg';
+import Icon2 from '@/static-files/header(2).svg';
+import Icon3 from '@/static-files/header(3).svg';
+import Icon4 from '@/static-files/header(4).svg';
 const INFO_DATA = [
   {
     id: 1,
     name: "One-time passcode",
     value: "kas4536-26",
-    icon: "icon1",
-    className: "-right-[50px] md:-right-[100px] -top-[80]"
+    icon: Icon1,
+    className: "-right-[70px] md:-right-[100px] -top-[80]"
   },
   {
     id: 2,
     name: "Phone Number",
     value: "+91 1234567890",
-    icon: "icon2",
-    className: "-left-[50px] md:-left-[100px] -top-[80]"
+    icon: Icon2,
+    className: "-left-[70px] md:-left-[100px] -top-[80]"
   },
   {
     id: 3,
     name: "Credit Card",
     value: "1234-5647-2947-9747",
-    icon: "icon3",
-    className: "-left-[50px] md:-left-[100px] -bottom-[80]"
+    icon: Icon3,
+    className: "-left-[70px] md:-left-[100px] -bottom-[80]"
 
   },
   {
     id: 4,
     name: "Email Address",
     value: "abc@gmail.com",
-    icon: "icon3",
-    className: " -right-[50px] md:-right-[100px] -bottom-[80]"
+    icon: Icon4,
+    className: " -right-[70px] md:-right-[100px] -bottom-[80]"
   },
 ];
 
@@ -50,9 +54,11 @@ const HeaderContent = () => {
       <div className="size-[200px] md:size-[300px] relative my-32">
         <Image src={ProductityImg} alt="" width={500} height={500} className=" object-cover " />
         {INFO_DATA.map((info) => (
-          <div key={info.id} className={`${info.className} w-fit absolute border border-[#1f1e1e] rounded-md p-2`}>
-            <div className="w-full h-full flex gap-2">
-              <div className="w-[20px] h-[33px] bg-gray-200 rounded-md"></div>
+          <div key={info.id} className={`${info.className} w-fit absolute border border-[#1f1e1e] rounded-md p-2 md:min-w-[200px]`}>
+            <div className="flex gap-2 ">
+              <div className="size-[33px]">
+                <Image src={info.icon} alt="" width={100} height={30} className=" object-cover " />
+              </div>
               <div className="text-[12px] *:whitespace-nowrap text-[#CAD1E9]">
                 <h4>{info.name}</h4>
                 <p>{info.value}</p>

@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import TestimonialComponent from "./TestimonialComponent";
 
 const REVIEW_DATA = [
@@ -32,19 +33,58 @@ const REVIEW_DATA = [
   },
 ];
 
-const Testimonial = () => {
-  return (
-    <div>
-      <button>Testimonials</button>
-      <h2>What’s our user says about us</h2>
+const TestimonialCarousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-      <div className="my-5">
-        {REVIEW_DATA.map((review) => (
-          <TestimonialComponent review={review} key={review.name} />
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === REVIEW_DATA.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? REVIEW_DATA.length - 1 : prevIndex - 1
+    );
+  };
+
+  return (
+    <div className="relative w-full max-w-4xl mx-auto py-10 px-5 bg-gradient-to-r from-[#121212] to-[#232323] rounded-lg shadow-lg">
+      {/* Carousel Navigation Arrows */}
+      <button
+        onClick={handlePrev}
+        className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-purple-600 text-white p-3 rounded-full shadow-lg hover:bg-purple-500 transition"
+      >
+        ❮
+      </button>
+
+      <button
+        onClick={handleNext}
+        className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-purple-600 text-white p-3 rounded-full shadow-lg hover:bg-purple-500 transition"
+      >
+        ❯
+      </button>
+
+      {/* Review Card */}
+      <div className="text-white text-center">
+        <TestimonialComponent review={REVIEW_DATA[currentIndex]} />
+      </div>
+
+      {/* Carousel Dots */}
+      <div className="flex justify-center space-x-2 mt-5">
+        {REVIEW_DATA.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={`w-3 h-3 rounded-full ${currentIndex === index
+              ? "bg-purple-600"
+              : "bg-gray-500 hover:bg-gray-400"
+              }`}
+          ></button>
         ))}
       </div>
     </div>
   );
 };
 
-export default Testimonial;
+export default TestimonialCarousel;

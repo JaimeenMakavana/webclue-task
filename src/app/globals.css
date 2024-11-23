@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -63,6 +64,11 @@ body {
   }
 }
 
+.sora{
+  font-family: "Sora", sans-serif;
+
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -79,13 +85,11 @@ body {
       color: #CAD1E9;
       padding: 8px 12px;
       /* min-width: 100px; */
-      height: 40px;
     }
     .gradient-border-mask::before {
       content: "";
       position: absolute;
       inset: 0;
-      
       border-radius: 12px;
       border: 1.5px solid transparent;
       background: linear-gradient(-120deg,#F33CC0, #4349FF) border-box;
@@ -125,3 +129,22 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+ .gradient-card-mask {
+      display: block;
+      position: relative;
+      color: #CAD1E9;
+      padding: 8px 12px;
+    }
+    .gradient-card-mask::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 12px;
+      border: 1.8px solid transparent;
+      background: linear-gradient(-120deg,#F33CC0, #4349FF) border-box;
+      -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+    }
