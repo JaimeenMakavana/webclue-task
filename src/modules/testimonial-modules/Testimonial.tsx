@@ -80,7 +80,7 @@ const TestimonialCarousel = () => {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full ${currentIndex === index
+              className={`size-[6px] rounded-full ${currentIndex === index
                 ? "bg-purple-600"
                 : "bg-gray-500 hover:bg-gray-400"
                 }`}

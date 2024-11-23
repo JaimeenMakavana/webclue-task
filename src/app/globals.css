@@ -155,3 +155,7 @@ body {
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
 }
+
+.gradientBg{
+  background-image: radial-gradient(circle, #f33cc0, #dc36d0, #bc38e0, #903ff0, #4349ff);
+}
