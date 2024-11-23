@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -66,9 +66,14 @@ body {
   }
 }
 
+@layer components {
+  .page-info {
+    @apply text-[1.2rem] text-[#CAD1E9] text-center my-3 max-w-2xl;
+  }
+}
+
 .sora {
   font-family: "Sora", sans-serif;
-
 }
 
 .raleway {
@@ -78,7 +83,7 @@ body {
 .gradient-border-mask {
   display: block;
   position: relative;
-  color: #CAD1E9;
+  color: #cad1e9;
   padding: 8px 12px;
   /* min-width: 100px; */
 }
@@ -89,18 +94,17 @@ body {
   inset: 0;
   border-radius: 12px;
   border: 1.5px solid transparent;
-  background: linear-gradient(-120deg, #F33CC0, #4349FF) border-box;
+  background: linear-gradient(-120deg, #f33cc0, #4349ff) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
 }
 
-
 .gradient-heading-mask {
   display: block;
   position: relative;
-  color: #CAD1E9;
+  color: #cad1e9;
   padding: 2px 12px;
   font-size: 14px;
 }
@@ -112,18 +116,17 @@ body {
 
   border-radius: 12px;
   border: 1.5px solid transparent;
-  background: linear-gradient(-120deg, #F33CC0, #4349FF) border-box;
+  background: linear-gradient(-120deg, #f33cc0, #4349ff) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
 }
 
-
 .heading {
   font-weight: 600;
   line-height: 55px;
-  background: -webkit-linear-gradient(#F33CC0, #4349FF);
+  background: -webkit-linear-gradient(#f33cc0, #4349ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -131,7 +134,7 @@ body {
 .gradient-card-mask {
   display: block;
   position: relative;
-  color: #CAD1E9;
+  color: #cad1e9;
   padding: 8px 12px;
 }
 
@@ -141,13 +144,12 @@ body {
   inset: 0;
   border-radius: 12px;
   border: 1.8px solid transparent;
-  background: linear-gradient(-120deg, #F33CC0, #4349FF) border-box;
+  background: linear-gradient(-120deg, #f33cc0, #4349ff) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
 }
-
 
 .glassBlack {
   background: rgba(40, 39, 39, 0.4);
@@ -156,11 +158,13 @@ body {
   -webkit-backdrop-filter: blur(3.5px);
 }
 
-.gradientBg{
-  background-image: radial-gradient(circle, #f33cc0, #dc36d0, #bc38e0, #903ff0, #4349ff);
+.gradientBg {
+  background-image: radial-gradient(
+    circle,
+    #f33cc0,
+    #dc36d0,
+    #bc38e0,
+    #903ff0,
+    #4349ff
+  );
 }
-/* .landing{
-  background: url('/img/landing-bg.svg') no-repeat center center/cover;
-  width: 100%;
-  height: 100%;
-} */

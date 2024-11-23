@@ -1,18 +1,37 @@
-import Icon1 from '@/static-files/header(1).svg';
-import Icon2 from '@/static-files/header(2).svg';
-import Icon3 from '@/static-files/header(3).svg';
-import Icon4 from '@/static-files/header(4).svg';
+import Icon1 from "@/static-files/header(1).svg";
+import Icon2 from "@/static-files/header(2).svg";
+import Icon3 from "@/static-files/header(3).svg";
+import Icon4 from "@/static-files/header(4).svg";
 
-import Service1 from '@/static-files/service1.svg';
-import Service2 from '@/static-files/service2.svg';
-import Service3 from '@/static-files/service3.svg';
+import Service1 from "@/static-files/service1.svg";
+import Service2 from "@/static-files/service2.svg";
+import Service3 from "@/static-files/service3.svg";
 
 import ChooseImg1 from "@/static-files/choose1.svg";
 import ChooseImg2 from "@/static-files/choose2.svg";
 import ChooseImg3 from "@/static-files/choose3.svg";
-import Tickmark1 from '@/static-files/checkmark-circle-01.svg'
-import Tickmark2 from '@/static-files/checkmark-circle-01 (1).svg'
-import Tickmark3 from '@/static-files/checkmark-circle-01 (2).svg'
+import Tickmark1 from "@/static-files/checkmark-circle-01.svg";
+import Tickmark2 from "@/static-files/checkmark-circle-01 (1).svg";
+import Tickmark3 from "@/static-files/checkmark-circle-01 (2).svg";
+
+export const HEADER_DATA = [
+  {
+    id: 1,
+    name: "Services",
+  },
+  {
+    id: 2,
+    name: "Features",
+  },
+  {
+    id: 3,
+    name: "Pricing",
+  },
+  {
+    id: 4,
+    name: "Partners",
+  },
+];
 
 export const INFO_DATA = [
   {
@@ -20,32 +39,30 @@ export const INFO_DATA = [
     name: "One-time passcode",
     value: "kas4536-26",
     icon: Icon1,
-    className: "-right-[70px] md:-right-[100px] -top-[80]"
+    className: "-right-[70px] md:-right-[100px] -top-[80]",
   },
   {
     id: 2,
     name: "Phone Number",
     value: "+91 1234567890",
     icon: Icon2,
-    className: "-left-[70px] md:-left-[100px] -top-[80]"
+    className: "-left-[70px] md:-left-[100px] -top-[80]",
   },
   {
     id: 3,
     name: "Credit Card",
     value: "1234-5647-2947-9747",
     icon: Icon3,
-    className: "-left-[70px] md:-left-[100px] -bottom-[80]"
-
+    className: "-left-[70px] md:-left-[100px] -bottom-[80]",
   },
   {
     id: 4,
     name: "Email Address",
     value: "abc@gmail.com",
     icon: Icon4,
-    className: " -right-[70px] md:-right-[100px] -bottom-[80]"
+    className: " -right-[70px] md:-right-[100px] -bottom-[80]",
   },
 ];
-
 
 export const SERVICES_DATA = [
   {
@@ -70,7 +87,6 @@ export const SERVICES_DATA = [
       "Lets users quickly find answers to their questions without having to search through multiple sources.",
   },
 ];
-
 
 export const REVIEW_DATA = [
   {
@@ -115,7 +131,7 @@ export const CHOOSE_DATA = [
     ],
     img: ChooseImg1,
     color: "#1E21E9",
-    tick: Tickmark1
+    tick: Tickmark1,
   },
   {
     id: 2,
@@ -128,7 +144,7 @@ export const CHOOSE_DATA = [
     ],
     img: ChooseImg2,
     color: "#7950FF",
-    tick: Tickmark2
+    tick: Tickmark2,
   },
   {
     id: 3,
@@ -141,6 +157,6 @@ export const CHOOSE_DATA = [
     ],
     img: ChooseImg3,
     color: "#098709",
-    tick: Tickmark3
+    tick: Tickmark3,
   },
 ];

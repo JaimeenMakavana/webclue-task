@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import TestimonialComponent from "./TestimonialComponent";
 import { REVIEW_DATA } from "@/lib/StaticData";
+import { GlowingHeading } from "@/atoms/GlowingButton";
 
 const TestimonialCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -55,7 +56,8 @@ const TestimonialCarousel = () => {
 
   return (
     <div className="w-full flex flex-col justify-center items-center py-5">
-      <button className="gradient-heading-mask">Testimonials</button>
+      <GlowingHeading title="Testimonials" />
+
       <h2 className="text-[40px] md:text-[60px] text-center leading-10 my-3 md:leading-tight max-w-2xl">
         What’s our user <span className="heading">says</span> about us
       </h2>
