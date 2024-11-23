@@ -41,8 +41,8 @@ const HeaderContent = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center pt-16 pb-10">
       <h1 className="gradient-heading-mask mb-5">Secure your data</h1>
-      <h2 className="heading text-[40px] md:text-[60px]  text-center max-w-xl ">Identity-hub is a better way to achieve privacy</h2>
-      <p className="text-[1.2rem] text-[#CAD1E9] text-center my-3 max-w-xl">
+      <h2 className="heading text-[40px] md:text-[60px]  text-center max-w-2xl ">Identity-hub is a better way to achieve privacy</h2>
+      <p className="text-[1.2rem] text-[#CAD1E9] text-center my-3 max-w-2xl">
         Make your data invisible by generating unlimited identities. The
         next-level in privacy protection for online and travel.
       </p>

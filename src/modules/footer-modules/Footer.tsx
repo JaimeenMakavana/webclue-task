@@ -18,7 +18,7 @@ const Footer = () => {
           <li>Features</li>
           <li>Services</li>
           <li>Pricing</li>
-          <li>How to use</li>
+          <li className="hidden lg:block">How to use</li>
         </ul>
       </div>
 
