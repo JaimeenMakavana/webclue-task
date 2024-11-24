@@ -11,7 +11,7 @@ interface ReviewType {
 
 const TestimonialComponent = ({ review }: { review: ReviewType }) => {
   return (
-    <div className="px-3 md:px-5">
+    <div className="px-3 md:px-5 ">
       <div className="flex justify-start items-center gap-2">
         <Image src={Avatar} alt="" width={40} height={40} />
         <div className="text-start">

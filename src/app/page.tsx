@@ -5,14 +5,15 @@ import Testimonial from "@/modules/testimonial-modules/Testimonial";
 import WhyChooseUs from "@/modules/why-choose-us-modules/WhyChooseUs";
 
 export default function Home() {
-  return (<>
-    <main className="text-white md:max-w-6xl mx-auto ">
-      <Header />
-      <Service />
-      <WhyChooseUs />
-      <Testimonial />
-    </main>
-    <Footer />
-  </>
+  return (
+    <>
+      <main className="text-white md:max-w-6xl mx-auto bg-[url('/backWallpaper.svg')] bg-top bg-no-repeat bg-cover lg:bg-contain">
+        <Header />
+        <Service />
+        <WhyChooseUs />
+        <Testimonial />
+      </main>
+      <Footer />
+    </>
   );
 }

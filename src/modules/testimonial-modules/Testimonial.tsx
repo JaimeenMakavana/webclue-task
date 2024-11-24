@@ -61,7 +61,7 @@ const TestimonialCarousel = () => {
       <h2 className="text-[40px] md:text-[60px] text-center leading-10 my-3 md:leading-tight max-w-2xl">
         What’s our user <span className="heading">says</span> about us
       </h2>
-      <div className="relative w-[85%] sm:w-[90%] max-w-4xl mx-auto py-10 px-5 bg-gradient-to-r from-[#121212] to-[#232323] rounded-lg shadow-lg">
+      <div className="relative w-[85%] sm:w-[90%] max-w-4xl mx-auto py-10 px-5 bg-opacity-30 bg-gradient-to-r from-[#121212] to-[#232323] rounded-lg shadow-lg">
         {/* Carousel Navigation Arrows */}
         <button
           onClick={handlePrev}
