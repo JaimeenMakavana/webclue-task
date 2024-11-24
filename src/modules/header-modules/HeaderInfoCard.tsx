@@ -1,11 +1,18 @@
 import Image from "next/image";
 import React from "react";
 
+interface InfoType {
+  icon: string;
+  name: string;
+  value: string;
+  className: string;
+}
+
 export const InfoCard = ({
   info,
   isMobile,
 }: {
-  info: any;
+  info: InfoType;
   isMobile: boolean;
 }) => (
   <div
